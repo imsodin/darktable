@@ -36,8 +36,8 @@ on:
 jobs:
 
   Linux-minimal:
-    name: ${{ false }}
-    # name: Linux-minimal.${{ matrix.os.code }}.${{ matrix.compiler.compiler }}.${{ matrix.target }}.${{ matrix.btype }}
+    name: Linux-minimal.${{ matrix.os.code }}.${{ matrix.compiler.compiler }}.${{ matrix.target }}.${{ matrix.btype }}
+    if: ${{ false }}
     runs-on: ${{ matrix.os.label }}
     strategy:
       fail-fast: true
