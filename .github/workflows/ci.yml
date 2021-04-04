@@ -1,7 +1,5 @@
 name: CI
 
-# Keep in sync with manualrun.yml!
-
 on:
   push:
     branches:
